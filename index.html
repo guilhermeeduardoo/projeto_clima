@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="main">
+        <h1>Clima</h1>
+        <form class="busca">
+            <input type="search" id="searchInput" />
+            <button>Buscar</button>
+        </form>
+    
+        <div class="resultado">
+            <div class="titulo">--</div>
+    
+            <div class="info">
+                <div class="temp">
+                    <div class="tempTitulo">Temperatura</div>
+                    <div class="tempInfo">-- <sup>ºC</sup></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                </div>
+                <div class="vento">
+                    <div class="ventoTitulo">Vento</div>
+                    <div class="ventoInfo">-- <span>km/h</span></div>
+                    <div class="ventoArea">
+                        <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="aviso"></div>
+        <div class="aviso-2">Nada encontrado</div>
+    
+        <footer>Feito por Guilherme</footer>
+    </div>
+    <svg width="426" height="267" viewBox="0 0 426 267" fill="none" xmlns="http://www.w3.org/2000/svg" class="vidro">
+        <g filter="url(#filter0_bi)">
+        <path d="M37.0435 12.5881C22.8772 6.32578 0 0 0 0V267H426C426 267 420.423 248.495 415.988 237.186C410.814 223.992 408.272 216.018 400.971 204.722C390.141 187.969 382.358 178.05 366.43 171.596C352.037 165.763 342.938 171.596 327.885 171.596H292.343C269.08 171.596 255.3 179.281 232.773 171.596C215.584 165.731 206.718 158.334 191.725 145.757C172.884 129.951 166.38 114.027 148.674 96.067C130.213 77.3398 119.251 67.7528 99.1163 52.34C75.8048 34.4957 62.586 23.8793 37.0435 12.5881Z" fill="white" fill-opacity="0.2"/>
+        </g>
+        <defs>
+        <filter id="filter0_bi" x="-40" y="-40" width="506" height="347" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feGaussianBlur in="BackgroundImage" stdDeviation="20"/>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="1"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+        </filter>
+        </defs>
+        </svg>
+        <svg width="452" height="246" viewBox="0 0 452 246" fill="none" xmlns="http://www.w3.org/2000/svg" class="vidro-2">
+            <g filter="url(#filter0_bi)">
+            <path d="M20.8369 20.8203C11.9943 13.4614 0 0 0 0L445.909 2.5625L452 246C452 246 444.887 219.432 434.689 205.641C427.165 195.465 421.677 190.45 411.288 183.219C401.641 176.504 384.36 169.766 384.36 169.766L365.767 159.836C356.425 152.179 357.591 142.114 348.457 134.211C333.689 121.434 319.72 123.127 300.372 120.438C281.4 117.801 270.203 123.676 251.325 120.438C233.728 117.419 224.444 112.765 208.048 105.703C196.223 100.61 189.191 98.2227 178.556 90.9688C168.45 84.0755 163.006 79.5264 155.155 70.1484C149.54 63.4427 149.553 56.9457 142.652 51.5703C129.027 40.9569 115.596 53.3739 98.4142 51.5703C80.3182 49.6707 69.5545 48.9488 52.8936 41.6406C39.2218 35.6436 32.3099 30.3683 20.8369 20.8203Z" fill="white" fill-opacity="0.2"/>
+            </g>
+            <defs>
+            <filter id="filter0_bi" x="-40" y="-40" width="532" height="326" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="20"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="1"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+            </filter>
+            </defs>
+            </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>

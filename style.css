@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(109.29deg, rgba(1, 1, 1, 0.86) 0%, rgba(20, 18, 91, 0.65) 99.28%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: rgba(85, 85, 85, 0.541);
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: rgb(68, 68, 68);
+    color: rgba(20, 18, 91, 0.65);
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(0, 0, 0, .1);
+    border-left-color: #1076d4;
+    border-bottom-color: #1076d4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+
+.aviso-2 {
+    color: white;
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+.vidro {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vidro-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main {
+    width: 40%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
